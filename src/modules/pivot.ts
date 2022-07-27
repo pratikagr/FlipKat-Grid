@@ -25,7 +25,7 @@ export function setSceneOrientation() {
     }
 
     pivotScene.addComponent(new Transform({
-        position: new Vector3(8, 0, 8),
+        position: new Vector3(36, 0, 70),
         rotation: Quaternion.Euler(0, yRotation, 0)
     }))
     engine.addEntity(pivotScene)

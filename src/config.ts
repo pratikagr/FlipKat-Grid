@@ -1,6 +1,7 @@
 export default {
     //SCENE FACING: "NORTH"/"EAST"/"SOUTH"/"WEST"
-    sceneOrientation: "NORTH",
+    sceneOrientation: "SOUTH",
+    
     logo: {
         bottom: {
             //image should be 512px square
@@ -48,16 +49,28 @@ export default {
     wearable: [
         {
             name: "Razor Blade Jacket",
-            model: "models/wearables/1.glb",
+            model: "models/suit.glb",
             link: "https://market.decentraland.org/",
-            position: new Vector3(4.2, -0.1, 5.1),
-            rotation: Quaternion.Euler(0, 0, 0)
+            position: new Vector3(4.2, 1, 5.1),
+            // scale: new Vector3(0,0,0),
+            rotation: Quaternion.Euler(0, 90, 0)
         },
+
+
+        // {
+        //     name: "Cars",
+        //     model: "models/LowPolyCars.glb",
+        //     link: "https://market.decentraland.org/",
+        //     position: new Vector3(4, 0, 6),
+        //     rotation: Quaternion.Euler(0, 0, 0)
+        // },
+
         {
-            name: "DCL Logo Hoddie",
-            model: "models/wearables/2.glb",
+            name: "Shirt",
+            model: "models/Dress1.glb",
             link: "https://market.decentraland.org/",
-            position: new Vector3(-4.2, -0.1, 5.1),
+            position: new Vector3(-4.2, 1, 5.1),
+            // scale:new Vector3(10,10,10),
             rotation: Quaternion.Euler(0, 0, 0)
         },
         {
@@ -68,29 +81,30 @@ export default {
             rotation: Quaternion.Euler(0, -90, 0)
         },
         {
-            name: "Over9000", 
-            model: "models/wearables/4.glb",
+            name: "CornFlakes", 
+            model: "models/CornFlakes.glb",
             link: "https://market.decentraland.org/",
             position: new Vector3(-5.1, -1, -3.3),
             rotation: Quaternion.Euler(0, 90, 0)
         },
         {
-            name: "Launch TShirt",
-            model: "models/wearables/5.glb",
-            link: "https://market.decentraland.org/",
-            position: new Vector3(0, -0.1, 0.7),
+            name: "iphone",
+            model: "models/Iphone.glb",
+            UIImage:"images/004.png",
+            // link: "https://market.decentraland.org/",
+            position: new Vector3(0, 1, 0.7),
             rotation: Quaternion.Euler(0, 0, 0)
         },
         {
-            name: "CitySneakers",
-            model: "models/wearables/6.glb",
+            name: "Macintosh",
+            model: "models/Macintosh.glb",
             link: "https://market.decentraland.org/",
             position: new Vector3(1, 0.7, -0.7),
             rotation: Quaternion.Euler(0, 45, 0)
         },
         {
-            name: "Rollers",
-            model: "models/wearables/7.glb",
+            name: "PlayStation",
+            model: "models/PlayStation.glb",
             link: "https://market.decentraland.org/",
             position: new Vector3(-1, 0.7, -0.7),
             rotation: Quaternion.Euler(0, -45, 0)

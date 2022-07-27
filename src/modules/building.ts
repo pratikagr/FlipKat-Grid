@@ -2,7 +2,7 @@ import { pivotScene } from "./pivot"
 
 export function addBuilding() {
     const building = new Entity()
-    building.addComponent(new GLTFShape("models/store/store.glb"))
+    building.addComponent(new GLTFShape("models/store/WoodStore.glb"))
     building.setParent(pivotScene)
 
 
