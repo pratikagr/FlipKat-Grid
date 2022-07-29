@@ -40,7 +40,7 @@ screenTransform.getComponent(Transform).scale.setAll(0.925) // You can change th
 
 // Video stream link from Vimeo
 const videoClip = new VideoClip(
-  'https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875'
+  'https://www.youtube.com/watch?v=9GA4gqLeeIQ'
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()
