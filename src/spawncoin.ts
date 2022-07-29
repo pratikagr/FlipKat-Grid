@@ -5,7 +5,7 @@ export function SpawnItem(
   model: GLTFShape,
   transform: Transform,
   sound: AudioClip,
-  CountNumber: number,
+  CountNumber: Number,
 
 ) {
   // let counter = 0;

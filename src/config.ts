@@ -17,28 +17,31 @@ export default {
     },
     socialMedia: [
         {
-            name: "HOMEPAGE",
-            model: "models/social_media/homepage.glb",
+            name: "MARIO",
+            model: "models/mario.glb",
             link: "https://www.decentraland.org",
-            position: new Vector3(1.5, 1.3, -5.35)
+            position: new Vector3(1.8, 1, -5.35),
+            rotation: Quaternion.Euler(90, 90, 0)
         },
         {
-            name: "DISCORD",
-            model: "models/social_media/discord.glb",
+            name: "PHOTOFRAME",
+            model: "models/photo.glb",
             link: "https://www.discord.org",
-            position: new Vector3(0.5, 1.3, -5.35)
+            position: new Vector3(0.5, 1.3, -5.35),
+            rotation: Quaternion.Euler(0, 90, 0)
         },
         {
-            name: "TWITTER",
-            model: "models/social_media/twitter.glb",
+            name: "MJONLIR",
+            image: "/images/scene-thumbnail.png",
+            model: "models/Mjonlir.glb",
             link: "https://www.twitter.com",
-            position: new Vector3(-0.5, 1.3, -5.35)
+            position: new Vector3(-0.5, 1.3, -5.35),
         },
         {
-            name: "TELEGRAM",
-            model: "models/social_media/telegram.glb",
+            name: "POT",
+            model: "models/flowerr.glb",
             link: "https://www.telegram.org",
-            position: new Vector3(-1.5, 1.3, -5.35)
+            position: new Vector3(-1.5, 1, -5.35)
         }
     ],
     videoScreen: {
@@ -49,49 +52,38 @@ export default {
     wearable: [
         {
             name: "Razor Blade Jacket",
-            model: "models/suit.glb",
+            model: "models/suit.glb",   
             link: "https://market.decentraland.org/",
             position: new Vector3(4.2, 1, 5.1),
-            // scale: new Vector3(0,0,0),
             rotation: Quaternion.Euler(0, 90, 0)
         },
-
-
-        // {
-        //     name: "Cars",
-        //     model: "models/LowPolyCars.glb",
-        //     link: "https://market.decentraland.org/",
-        //     position: new Vector3(4, 0, 6),
-        //     rotation: Quaternion.Euler(0, 0, 0)
-        // },
-
         {
             name: "Shirt",
             model: "models/Dress1.glb",
+            // image: "/images/scene-thumbnail.png",
             link: "https://market.decentraland.org/",
             position: new Vector3(-4.2, 1, 5.1),
             // scale:new Vector3(10,10,10),
             rotation: Quaternion.Euler(0, 0, 0)
         },
         {
-            name: "Aviator",
-            model: "models/wearables/3.glb",
+            name: "Bag",
+            model: "models/bag.glb",
             link: "https://market.decentraland.org/",
-            position: new Vector3(5.1, -1, -3.3),
+            position: new Vector3(5.1, 1, -3.3),
             rotation: Quaternion.Euler(0, -90, 0)
         },
         {
             name: "CornFlakes", 
             model: "models/CornFlakes.glb",
             link: "https://market.decentraland.org/",
-            position: new Vector3(-5.1, -1, -3.3),
+            position: new Vector3(-5.1, 1, -3.3),
             rotation: Quaternion.Euler(0, 90, 0)
         },
         {
             name: "iphone",
             model: "models/Iphone.glb",
-            UIImage:"images/004.png",
-            // link: "https://market.decentraland.org/",
+            link: "https://market.decentraland.org/",
             position: new Vector3(0, 1, 0.7),
             rotation: Quaternion.Euler(0, 0, 0)
         },
@@ -104,7 +96,7 @@ export default {
         },
         {
             name: "PlayStation",
-            model: "models/PlayStation.glb",
+            model: "models/ps4.glb",
             link: "https://market.decentraland.org/",
             position: new Vector3(-1, 0.7, -0.7),
             rotation: Quaternion.Euler(0, -45, 0)

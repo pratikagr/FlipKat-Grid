@@ -1,4 +1,5 @@
 import config from "../config"
+import { image } from "./images"
 import { pivotScene } from "./pivot"
 
 export function addSocialLink() {
@@ -13,7 +14,8 @@ export function addSocialLink() {
         }))
 
         clickableLink.addComponent(new OnPointerDown(() => {
-            openExternalURL(linkData.link)
+            // openExternalURL(linkData.link)
+            image()
         },
             {
                 hoverText: linkData.name,

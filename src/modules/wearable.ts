@@ -1,5 +1,5 @@
-import { pro } from "src/product"
 import config from "../config"
+import { image } from "./images"
 import { pivotScene } from "./pivot"
 
 export async function addWearable() {
@@ -22,14 +22,15 @@ export async function addWearable() {
                 button:ActionButton.POINTER
             }))   
 
-    //     if (item.link === null) {
-    //         wearableItem.getComponent(OnPointerDown).hoverText = "INFO N/A"
-    //     }
-    //     else {
-    //         //wearableItem.getComponent(OnPointerDown).hoverText = "INFO"
-    //         wearableItem.getComponent(OnPointerDown).callback = () => {
-    //             if (typeof(item.link) === 'string') openExternalURL(item.link as unknown as string)
-    //         }
-    //     }
+        if (item.link === null) {
+            wearableItem.getComponent(OnPointerDown).hoverText = "INFO N/A"
+        }
+        else {
+            //wearableItem.getComponent(OnPointerDown).hoverText = "INFO"
+            wearableItem.getComponent(OnPointerDown).callback = () => {
+                if (typeof(item.link) === 'string') 
+                openExternalURL(item.link as unknown as string)
+            }
+        }
     }
 }

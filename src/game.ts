@@ -11,10 +11,11 @@ import { base } from './base'
 import { SpawnItem } from './spawncoin'
 import { birdIdleShape, birdFlyShape,} from './modules/models'
 import { realDistance } from './modules/utilities'
+import { Gallery } from './video'
 
 
 
-
+Gallery()
 setSceneOrientation()
 addBuilding()
 addLogo()
@@ -62,7 +63,7 @@ new AvatarModifierArea({
 })
 )
 hideAvatarsEntity.addComponent(
-new Transform({ position: new Vector3(32,3, 65) })
+new Transform({ position: new Vector3(45,3, 65) })
 )
 engine.addEntity(hideAvatarsEntity)
 
